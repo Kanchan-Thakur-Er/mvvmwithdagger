@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_85sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ember_logo" />
+
+    <TextView
+        android:id="@+id/tvEmberText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogo"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/lobster_two"
+        android:gravity="center"
+        android:text="ember"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/size50_" />
+
+    <TextView
+        android:id="@+id/tvEmberAppDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEmberText"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/exo_2"
+        android:gravity="center"
+        android:text="@string/appdescription"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/_13sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEmberAppDescription"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/tvNewUser"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:background="@drawable/btnroundgrey"
+            android:fontFamily="@font/exo_2"
+            android:text="@string/new_user"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_13ssp" />
+
+        <Button
+            android:id="@+id/tvReturningUser"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:background="@drawable/btnroundgrey"
+            android:fontFamily="@font/exo_2"
+            android:text="@string/returning_user_string"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_13ssp" />
+
+        <Button
+            android:id="@+id/tvInvitedViaEmail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:background="@drawable/btnroundgrey"
+            android:fontFamily="@font/exo_2"
+            android:text="@string/invited_via_email_string"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_13ssp" />
+    </LinearLayout>
+</RelativeLayout>

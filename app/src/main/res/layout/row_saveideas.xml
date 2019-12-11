@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_120sdp"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_3sdp"
+    app:cardBackgroundColor="#E5E6ED">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgSavedIdea"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_130sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/saved_idea_img" />
+
+            <ImageView
+                android:id="@+id/imgStar"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:src="@drawable/gray_star" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtBusinessName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="Name of \nBusiness"
+            android:textColor="#727E8C"
+            android:textSize="@dimen/_15ssp" />
+
+        <TextView
+            android:id="@+id/txtBusinessType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size5_"
+            android:text="Type of \nBusiness"
+            android:textColor="#727E8C"
+            android:textSize="@dimen/_15ssp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

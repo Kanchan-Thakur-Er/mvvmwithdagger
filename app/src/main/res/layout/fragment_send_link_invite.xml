@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:src="@drawable/profile_pic_dp" />
+
+    <TextView
+        android:id="@+id/tvProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/lobster_two"
+        android:gravity="center"
+        android:text="UserName"
+        android:textColor="@color/colorLightBrown"
+        android:textSize="@dimen/_28ssp" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/exo_2"
+        android:gravity="center"
+        android:text="Email@email.com"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/_18ssp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:fontFamily="@font/sarala"
+        android:gravity="center"
+        android:text="This email entered is already within the \nEmber database. "
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/_13ssp" />
+
+    <Button
+        android:id="@+id/btnProceedWithInvite"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/btn_background2"
+        android:fontFamily="@font/exo_2"
+        android:text="PROCEED WITH INVITE"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_13ssp" />
+
+    <TextView
+        android:id="@+id/txtCancelInvite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:fontFamily="@font/exo_2"
+        android:gravity="center"
+        android:text="@string/cancel_invite"
+        android:textColor="@color/colorbtnbck2"
+        android:textSize="@dimen/_13ssp" />
+
+</LinearLayout>

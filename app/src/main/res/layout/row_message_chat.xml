@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:id="@+id/rlChatSender"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/lightgreychat"
+        android:padding="@dimen/_10sdp">
+
+
+        <TextView
+            android:id="@+id/tvChatSender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message would go here.  All received messages would be formatted this way.  Grey box with  reversed type."
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_15sdp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlChatReceiver"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlChatSender"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:background="@drawable/darkgreychat"
+        android:padding="@dimen/_10sdp">
+
+
+        <TextView
+            android:id="@+id/tvChatReceiver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message would go here.  All sent messages would be formatted this way.  Grey box with darker type.  Full message would be displayed."
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_15sdp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlChatAdmin"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlChatReceiver"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:background="@drawable/backgroundchatadmin"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/tvChatAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is a message from Ember"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_13ssp" />
+    </RelativeLayout>
+</RelativeLayout>

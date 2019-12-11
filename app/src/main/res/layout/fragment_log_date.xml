@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_bck_arrow_key"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_13sdp"
+                android:padding="@dimen/_7sdp"
+                android:src="@drawable/left_arrow" />
+
+            <ImageView
+                android:id="@+id/img_logdata_black_symbol"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/_3sdp"
+                android:src="@drawable/logdateblack" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/lobster_two"
+            android:padding="@dimen/_5sdp"
+            android:text="Log The Date"
+            android:textColor="@color/colorLightBrown"
+            android:textSize="@dimen/_22ssp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@color/colorGreyblack" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_SavedIdea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_13sdp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/saved_idea_img" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_BusinessName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/exo_2"
+                    android:text="NAME OF \nBUSINESS"
+                    android:textColor="#314455"
+                    android:textSize="@dimen/_15sdp" />
+
+                <TextView
+                    android:id="@+id/txt_BusinessType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/exo_2"
+                    android:text="Type of Business"
+                    android:textColor="#9EAFC1"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    android:id="@+id/txt_mileAway"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/exo_2"
+                    android:text="75 miles away"
+                    android:textColor="#9EAFC1"
+                    android:textSize="@dimen/_13sdp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@color/colorGreyblack" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:fontFamily="@font/exo_2"
+            android:hint="ADD A PERSONAL HEADING"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:nextFocusDown="@id/edt_YourCity"
+            android:textColorHint="@color/colorText"
+            android:textSize="@dimen/_13ssp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:fontFamily="@font/exo_2"
+            android:hint="DATE VISITED"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:nextFocusDown="@id/edt_YourCity"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorText"
+            android:textSize="@dimen/_13ssp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:fontFamily="@font/exo_2"
+            android:hint="ADD MEMORIES"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:nextFocusDown="@id/edt_YourCity"
+            android:textColorHint="@color/colorText"
+            android:textSize="@dimen/_13ssp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/exo_2"
+            android:text="RATE THE DATE"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_13ssp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar1"
+            style="@style/customRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:isIndicator="false"
+            android:scaleX="1.5"
+            android:scaleY="1.5" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:fontFamily="@font/exo_2"
+            android:text="ADD FEELINGS"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_13ssp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvEmojis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_10sdp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_13sdp"
+            android:background="@drawable/button_background"
+            android:text="add to diary"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_13ssp" />
+    </LinearLayout>
+</ScrollView>
+
+
+
+

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:fontFamily="@font/lobster_two"
+        android:text="Invited Users"
+        android:textColor="@color/colorLightBrown"
+        android:textSize="@dimen/_25ssp" />
+
+    <TextView
+        android:id="@+id/text_privacyPolicy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/_15ssp"
+        android:layout_marginTop="@dimen/_20ssp"
+        android:layout_marginRight="@dimen/_15ssp"
+        android:fontFamily="@font/exo_2"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/_1sdp"
+        android:paddingBottom="@dimen/_20ssp"
+        android:text="Please enter the code provided in the \nemail invite. This will allow us to \nautomatically link your account to the \nperson that invited you."
+        android:textSize="@dimen/_15ssp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_15ssp"
+        android:layout_marginTop="@dimen/_20ssp"
+        android:layout_marginRight="@dimen/_15ssp"
+        android:backgroundTint="@color/colorText"
+        android:fontFamily="@font/exo_2"
+        android:hint="ENTER CODE"
+        android:textColorHint="@color/colorText"
+        android:textSize="@dimen/_15ssp" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_15ssp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_15ssp"
+        android:background="@drawable/btnroundgrey"
+        android:text="@string/submit"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_18ssp" />
+</LinearLayout>

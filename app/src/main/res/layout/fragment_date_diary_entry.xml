@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/img_BckArrowKey"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/left_arrow" />
+
+            <ImageView
+                android:id="@+id/img_logdata_black_symbol"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/img_book_symbol" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:fontFamily="@font/lobster_two"
+            android:text="Date Diary Entry"
+            android:textColor="@color/colorLightBrown"
+            android:textSize="@dimen/_25ssp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_SavedIdea"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/saved_idea_img" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_weight=".75"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_110sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_add_photos" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_empty_pic" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_empty_pic" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_margin="@dimen/_15sdp"
+            android:background="@color/colorGreyblack" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp">
+
+            <TextView
+                android:id="@+id/txt_edt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:drawableLeft="@drawable/img_edt_small"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/exo_2"
+                android:text="EDIT"
+                android:textColor="@color/colorLighterGrey"
+                android:textSize="@dimen/_13ssp" />
+
+            <TextView
+                android:id="@+id/txt_HeadlineAdded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/exo_2"
+                android:text="PERSONAL HEADLINE ADDED BY \nUSER:"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/_15ssp" />
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_18sdp"
+                android:src="@drawable/symbol_heart" />
+
+
+            <TextView
+                android:id="@+id/txt_LoggedDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_edt"
+                android:layout_marginTop="@dimen/size5_"
+                android:fontFamily="@font/exo_2"
+                android:text="Date : 12/24/19"
+                android:textColor="@color/colorLighterGrey"
+                android:textSize="@dimen/_13ssp" />
+
+            <TextView
+                android:id="@+id/txt_sharedwith"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_LoggedDate"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/exo_2"
+                android:text="Shared with : UserName"
+                android:textColor="@color/colorLighterGrey"
+                android:textSize="@dimen/_13ssp" />
+
+            <TextView
+                android:id="@+id/txt_DateLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_sharedwith"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/exo_2"
+                android:text="Date Location: Name of Business"
+                android:textColor="@color/colorLighterGrey"
+                android:textSize="@dimen/_13ssp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_margin="@dimen/_15sdp"
+            android:background="@color/colorGreyblack" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:fontFamily="@font/exo_2"
+            android:text="USER NAMES MEMORIES :"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_15ssp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:fontFamily="@font/exo_2_light"
+            android:text="This is the memories that have been added by the partner.It is not editable by the other user.  The other user can only input their own memories."
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_14ssp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp">
+
+            <TextView
+                android:id="@+id/txt_UserNameMemories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:fontFamily="@font/exo_2"
+                android:text="MY MEMORIES :"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/_15ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/txt_UserNameMemories"
+                android:drawableLeft="@drawable/img_edt_small"
+                android:drawablePadding="@dimen/_5sdp"
+                android:fontFamily="@font/exo_2"
+                android:text="EDIT"
+                android:textColor="@color/colorLighterGrey"
+                android:textSize="@dimen/_12ssp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:fontFamily="@font/exo_2_light"
+            android:text="This is the memories that have been added by the partner.It is not editable by the other user.  The other user can only input their own memories."
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:fontFamily="@font/exo_2"
+            android:text="PARTNER'S RATING"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_15ssp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar1"
+            style="@style/customRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:isIndicator="false"
+            android:scaleX="1.5"
+            android:scaleY="1.5" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:fontFamily="@font/exo_2"
+            android:text="MY RATING"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_15ssp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar2"
+            style="@style/customRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:isIndicator="false"
+            android:scaleX="1.5"
+            android:scaleY="1.5" />
+    </LinearLayout>
+</ScrollView>

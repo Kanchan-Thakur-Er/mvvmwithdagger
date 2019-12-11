@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="@font/lobster_two"
+            android:text="@string/my_information"
+            android:textColor="@color/colorLightBrown"
+            android:textSize="@dimen/_25ssp" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_gravity="center"
+            android:background="@drawable/grey_circle">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_profilepic"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/profile_pic">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignBottom="@id/image_profilepic"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/edit">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:fontFamily="@font/exo_2"
+            android:hint="@string/your_name"
+            android:maxLength="30"
+            android:nextFocusDown="@id/edt_YourCity"
+            android:singleLine="true"
+            android:textColorHint="@color/colorEditText"
+            android:textSize="@dimen/_13ssp" />
+
+        <EditText
+            android:id="@+id/edt_YourCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:fontFamily="@font/exo_2"
+            android:hint="@string/your_city"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:textColorHint="@color/colorEditText"
+            android:textSize="@dimen/_13ssp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/exo_2"
+                android:text="@string/search_radius"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/_13ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:fontFamily="@font/exo_2"
+                android:gravity="right|center_vertical"
+                android:text="15 miles"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/_10ssp" />
+        </RelativeLayout>
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:progressDrawable="@drawable/seek_bar"
+            android:thumb="@drawable/seek_thumb" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner_interest"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:background="@drawable/back_design"
+            android:entries="@array/seclect_activity_type" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner_horizon"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:background="@drawable/back_design"
+            android:entries="@array/Select_Mood" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:text="PLANNING HORIZON"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_13ssp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_weight="1"
+                android:fontFamily="@font/exo_2"
+                android:text="Now"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_weight="1"
+                android:fontFamily="@font/exo_2"
+                android:text="to"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_weight="1"
+                android:fontFamily="@font/exo_2"
+                android:text="90 days out"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/_10ssp" />
+        </LinearLayout>
+
+        <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+            android:id="@+id/rangeSeekbar3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            app:bar_color="@color/seek_bar_background"
+            app:bar_highlight_color="@color/seek_bar_background"
+            app:corner_radius="10"
+            app:data_type="_integer"
+            app:gap="20"
+            app:left_thumb_color="@color/seek_bar_progress"
+            app:left_thumb_color_pressed="@color/seek_bar_progress"
+            app:max_value="100"
+            app:min_value="0"
+            app:right_thumb_color="@color/seek_bar_progress"
+            app:right_thumb_color_pressed="@color/seek_bar_progress" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="@drawable/btnroundgrey"
+            android:text="@string/submit"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_15ssp" />
+    </LinearLayout>
+</ScrollView>

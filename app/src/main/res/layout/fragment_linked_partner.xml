@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/imgSymbolProfilePic"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:src="@drawable/symbol_profile_pic" />
+
+            <ImageView
+                android:id="@+id/imgRatingSymbol"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:src="@drawable/img_rating_symbol" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="@dimen/_160sdp"
+            android:layout_gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_profilepic"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:src="@drawable/profile_centre_pic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:drawableBottom="@drawable/img_logdata_black_symbol"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textColor="@color/colorLightBrown" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/lobster_two"
+            android:gravity="center"
+            android:text="Real Name"
+            android:textColor="@color/colorLightBrown"
+            android:textSize="@dimen/_25ssp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:backgroundTint="@color/colorBlack"
+                android:clickable="false"
+                android:editable="false"
+                android:focusable="false"
+                android:fontFamily="@font/exo_2"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:nextFocusDown="@id/edt_YourCity"
+                android:text="COUPLE NAME:"
+                android:textColorHint="@color/colorText"
+                android:textSize="@dimen/_13ssp" />
+
+            <EditText
+                android:id="@+id/tvCoupleName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_120sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:background="@android:color/transparent"
+                android:drawableRight="@drawable/img_edt_small"
+                android:hint="SCHNOOPY DOOPIE"
+                android:textColor="@color/colorText2"
+                android:textSize="@dimen/_13ssp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtAnniversaryDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:backgroundTint="@color/colorBlack"
+                android:clickable="false"
+                android:drawableRight="@drawable/img_edt_small"
+                android:editable="false"
+                android:focusable="false"
+                android:fontFamily="@font/exo_2"
+                android:hint="ANNIVERSARY DATE:"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:textColorHint="@color/colorText"
+                android:textSize="@dimen/_13ssp" />
+
+            <EditText
+                android:id="@+id/tvAnniversaryDate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_160sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:background="@android:color/transparent"
+                android:hint="12/23/2008"
+                android:textColor="@color/colorText2"
+                android:textSize="@dimen/_13ssp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtTogetherSince"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:backgroundTint="@color/colorBlack"
+                android:clickable="false"
+                android:drawableRight="@drawable/img_edt_small"
+                android:editable="false"
+                android:focusable="false"
+                android:fontFamily="@font/exo_2"
+                android:hint="TOGETHER SINCE:"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:textColorHint="@color/colorText"
+                android:textSize="@dimen/_13ssp" />
+
+            <EditText
+                android:id="@+id/tvTogetherDate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_140sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:background="@android:color/transparent"
+                android:hint="5/27/19"
+                android:textColor="@color/colorText2"
+                android:textSize="@dimen/_13ssp" />
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner_interest"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:background="@drawable/back_design"
+            android:entries="@array/Dating" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="@font/lobster_two"
+            android:text="Favourite Date"
+            android:textColor="@color/colorLightBrown"
+            android:textSize="@dimen/_25ssp" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@color/colorGreyblack" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_SavedIdea"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/size15_"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/saved_idea_img" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/size20_"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_HeadlineAdded"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/exo_2"
+                        android:text="PERSONAL \nHEADLINE ADDED BY \nUSER"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/_13ssp" />
+
+                    <TextView
+                        android:id="@+id/txt_LoggedDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt_HeadlineAdded"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:fontFamily="@font/exo_2"
+                        android:text="Logged : 12/24/19"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/_10ssp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txt_BusinessName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size10_"
+                    android:fontFamily="@font/exo_2"
+                    android:text="NAME OF BUSINESS"
+                    android:textColor="@color/colorText2"
+                    android:textSize="@dimen/_13ssp" />
+
+                <TextView
+                    android:id="@+id/txt_BusinessType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/exo_2"
+                    android:text="Type of Business"
+                    android:textColor="@color/colorText2"
+                    android:textSize="@dimen/_10ssp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@color/colorGreyblack" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/btn_background2"
+            android:fontFamily="@font/exo_2"
+            android:text="save changes"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_13ssp" />
+
+        <TextView
+            android:id="@+id/tvRemovePartner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:fontFamily="@font/exo_2"
+            android:gravity="center"
+            android:text="@string/remove_partner"
+            android:textColor="@color/colorbtnbck2"
+            android:textSize="@dimen/_12ssp" />
+    </LinearLayout>
+</ScrollView>

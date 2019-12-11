@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#314455"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@drawable/left_arrow" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:fontFamily="@font/exo_2"
+        android:text="Photos(12):"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_15ssp" />
+
+    <!--    <ImageView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="@dimen/_10sdp"-->
+    <!--        android:adjustViewBounds="true"-->
+    <!--        android:src="@drawable/functionpic" />-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPagerPics"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tvDescriptionContent" />
+
+        <TextView
+            android:id="@+id/tvDescriptionContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/exo_2"
+            android:text="Description entered by business."
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_15ssp" />
+    </RelativeLayout>
+
+</LinearLayout>

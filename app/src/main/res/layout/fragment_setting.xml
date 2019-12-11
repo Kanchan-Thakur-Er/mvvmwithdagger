@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/imgSymbolProfilePic"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:padding="@dimen/_1sdp"
+                android:src="@drawable/profile" />
+
+            <ImageView
+                android:id="@+id/imgFavourite"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/setting_symbol" />
+
+            <ImageView
+                android:id="@+id/imgRatingSymbol"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:src="@drawable/fire" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lobster_two"
+            android:gravity="center"
+            android:text="Settings"
+            android:textColor="@color/colorLightBrown"
+            android:textSize="@dimen/_25ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:fontFamily="@font/exo_2"
+            android:text="ACCOUNT SETTINGS"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_15ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/exo_2"
+            android:text="EMAIL: JOHN@EMAIL.COM"
+            android:textColor="@color/colorbtnbck"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/exo_2"
+            android:text="USER NAME : BUBBA"
+            android:textColor="@color/colorbtnbck"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:drawableRight="@drawable/img_edt_small"
+            android:fontFamily="@font/exo_2"
+            android:text="REAL NAME: PAUL SMITH"
+            android:textColor="@color/colorbtnbck"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:id="@+id/tvChangePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:fontFamily="@font/exo_2"
+            android:text="@string/change_password"
+            android:textColor="@color/colorbtnbck"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/exo_2"
+            android:text="PERSONAL INFORAMTION"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_15ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:drawableRight="@drawable/img_edt_small"
+            android:fontFamily="@font/exo_2"
+            android:text="BIRTHDAY: 12/20/72"
+            android:textColor="@color/colorbtnbck"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/exo_2"
+            android:text="ACCOUNT INFORAMTION"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_15ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/exo_2"
+            android:text="BASIC ACCOUNT"
+            android:textColor="@color/colorbtnbck"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:fontFamily="@font/exo_2"
+            android:text="OTHER SETTINGS"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_15ssp" />
+
+        <TextView
+            android:id="@+id/tvPush"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:background="@color/colorGreyblack"
+            android:fontFamily="@font/exo_2"
+            android:padding="@dimen/_5sdp"
+            android:text="EMAIL AND PUSH"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:background="@color/colorGreyblack"
+            android:fontFamily="@font/exo_2"
+            android:padding="@dimen/_5sdp"
+            android:text="PRIVACY"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_12ssp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_15sdp"
+            android:background="@drawable/button_background"
+            android:text="LOG OUT"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_15ssp" />
+    </LinearLayout>
+</ScrollView>

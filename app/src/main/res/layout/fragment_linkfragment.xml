@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="@dimen/_180sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/link_partner_pics" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/lobster_two"
+            android:gravity="center"
+            android:text="Link Partner"
+            android:textColor="@color/colorLightBrown"
+            android:textSize="@dimen/_25ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/sarala"
+            android:gravity="center"
+            android:text="Get the most out of ember and your dates \nby linking your partner. Enter their email \naddress and we'll send an invite. "
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_13ssp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:backgroundTint="@color/colorBlack"
+            android:fontFamily="@font/exo_2"
+            android:hint="EMAIL"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:nextFocusDown="@id/edt_YourCity"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorText"
+            android:textSize="@dimen/_13ssp" />
+
+        <Button
+            android:id="@+id/btnLinkInvite"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="@drawable/btn_background2"
+            android:fontFamily="@font/exo_2"
+            android:text="SEND LINK INVITE"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_13ssp" />
+    </LinearLayout>
+</ScrollView>

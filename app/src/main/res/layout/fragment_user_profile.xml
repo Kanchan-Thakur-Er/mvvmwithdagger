@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/imgSymbolProfilePic"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/_7sdp"
+                android:src="@drawable/profile" />
+
+            <ImageView
+                android:id="@+id/imgRatingSymbol"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:padding="@dimen/_7sdp"
+                android:src="@drawable/fire" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/imgProfilePic"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_130sdp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/profile_pic_dp" />
+
+            <ImageButton
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignBottom="@id/imgProfilePic"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/edit" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/txtProfileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:fontFamily="@font/lobster_two"
+                android:gravity="center"
+                android:text="BubbaGump"
+                android:textColor="@color/colorLightBrown"
+                android:textSize="@dimen/_28ssp" />
+
+            <ImageView
+                android:id="@+id/imgBook"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_110sdp"
+                android:layout_below="@id/txtProfileName"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:src="@drawable/circular_left_upper" />
+
+            <TextView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_26sdp"
+                android:layout_marginTop="@dimen/_115sdp"
+                android:background="@drawable/badgeicon"
+                android:gravity="center"
+                android:text="10"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_7ssp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imgNotification"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_110sdp"
+                android:layout_below="@id/txtProfileName"
+                android:layout_toRightOf="@id/imgBook"
+                android:src="@drawable/circular_right_upper" />
+
+            <TextView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_70sdp"
+                android:layout_marginTop="@dimen/_115sdp"
+                android:layout_toRightOf="@id/imgBook"
+                android:background="@drawable/badgeicon"
+                android:gravity="center"
+                android:text="10"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_7ssp"
+                android:visibility="visible"
+
+                />
+
+            <ImageView
+                android:id="@+id/imgSetting"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_110sdp"
+                android:layout_below="@id/txtProfileName"
+                android:layout_marginTop="@dimen/_78sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:src="@drawable/circular_left_bottom" />
+
+            <ImageView
+                android:id="@+id/imgFilter"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_110sdp"
+                android:layout_below="@id/txtProfileName"
+                android:layout_marginTop="@dimen/_78sdp"
+                android:layout_toRightOf="@id/imgSetting"
+                android:src="@drawable/circular_right_bottm" />
+
+            <ImageView
+                android:id="@+id/imgReviewPartner"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_below="@id/txtProfileName"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_42sdp"
+                android:background="@drawable/white_profile_pics_back"
+                android:padding="@dimen/_7sdp"
+                android:src="@drawable/profile_centre_pic" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@color/colorGreyblack" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo_2"
+            android:gravity="center"
+            android:text="AREA FOR PROMO COPY \nPRESENTED BY EMBER"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_15ssp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@color/colorGreyblack" />
+    </LinearLayout>
+</ScrollView>

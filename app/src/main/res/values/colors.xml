@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#000</color>
+    <color name='colorWelcomeButtons'>#E7E8EF</color>
+    <color name='colorembertext'>#B1B1B4</color>>
+    <color name="black_overlay">#66000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorPink">#EA526F</color>
+    <color name='colorPeach'>#D999B9</color>
+    <color name='colorGrey'>#525066</color>
+    <color name='colorLightSkyBlue'>#B8B3E9</color>
+    <color name='colorLightGrey'>#E5E6ED</color>
+    <color name='colorLighterGrey'>#8E8AB4</color>
+    <color name="seek_bar_background">#E5E6ED</color>
+    <color name="seek_bar_progress">#ea526f</color>
+    <color name="seek_bar_secondary_progress">#9E5A63</color>
+    <color name="colorLightBrown">#9E5A63</color>
+    <color name='colorGreyblack'>#e5e6ed</color>
+    <color name="colorViewGrey">#E5E6ED</color>
+    <color name="colorText2">#97aabd</color>
+    <color name='colorText'>#314455</color>
+    <color name='colorEditText'>#525066</color>
+    <color name='colorbtnbck'>#8e8ab4</color>
+    <color name='colorbtnbck2'>#bfbcd4</color>
+    <color name='colorDialogGrey'>#E5E6ED</color>
+    <color name="dialogbuttoncolor">#425464</color>
+</resources>

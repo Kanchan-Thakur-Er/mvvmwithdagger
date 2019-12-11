@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_7sdp"
+        android:layout_marginRight="@dimen/_7sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="@font/lobster_two"
+            android:text="@string/create_account"
+            android:textColor="@color/colorLightBrown"
+            android:textSize="@dimen/_22ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/exo_2"
+            android:gravity="center"
+            android:text="@string/password_instruction"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_12ssp" />
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:fontFamily="@font/exo_2"
+            android:hint="@string/username"
+            android:maxLength="50"
+            android:singleLine="true"
+            android:textColorHint="@color/colorEditText"
+            android:textSize="@dimen/_12ssp" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:fontFamily="@font/exo_2"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLength="50"
+            android:singleLine="true"
+            android:textColorHint="@color/colorEditText"
+            android:textSize="@dimen/_12ssp" />
+
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:fontFamily="@font/exo_2"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:maxLength="50"
+            android:singleLine="true"
+            android:textColorHint="@color/colorEditText"
+            android:textSize="@dimen/_12ssp" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:fontFamily="@font/exo_2"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:maxLength="50"
+            android:singleLine="true"
+            android:textColorHint="@color/colorEditText"
+            android:textSize="@dimen/_12ssp" />
+
+        <Button
+            android:id="@+id/btnCreateAccount"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/btnroundgrey"
+            android:fontFamily="@font/exo_2"
+            android:text="@string/create"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_13ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/_10sdp"
+            android:fontFamily="@font/lobster_two"
+            android:gravity="center"
+            android:text="@string/or"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_13ssp" />
+
+        <Button
+            android:id="@+id/btnFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/btnroundgrey"
+            android:fontFamily="@font/exo_2"
+            android:text="@string/continue_with_facebook"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_13ssp" />
+
+        <TextView
+            android:id="@+id/txtLogIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:text="@string/log_in"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_13ssp" />
+
+        <TextView
+            android:id="@+id/tvPrivacyPolicy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:gravity="start"
+            android:text="@string/terms_of_use"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_12ssp" />
+    </LinearLayout>
+</ScrollView>

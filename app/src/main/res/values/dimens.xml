@@ -1,0 +1,24 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="size25_">25sp</dimen>
+    <dimen name="size18_">18sp</dimen>
+    <dimen name="size7_">7sp</dimen>
+    <dimen name="size10_">10sp</dimen>
+    <dimen name="size180_">180sp</dimen>
+    <dimen name="size20_">20sp</dimen>
+    <dimen name="size15_">15sp</dimen>
+    <dimen name="seek_bar_thickness">4dp</dimen>
+    <dimen name="seek_bar_thumb_size">25dp</dimen>
+    <dimen name="size24_">24sp</dimen>
+    <dimen name="size28_">28sp</dimen>
+    <dimen name="size50_">50dp</dimen>
+    <dimen name="size150_">150dp</dimen>
+    <dimen name="size5_">5sp</dimen>
+    <dimen name="size40_">40dp</dimen>
+    <dimen name="size30_">30sp</dimen>
+    <dimen name="size12_">12dp</dimen>
+    <dimen name="size1_">1dp</dimen>
+    <dimen name="size60_">60sp</dimen>
+    <dimen name="size160_">160dp</dimen>
+    <dimen name="size200_">200sp</dimen>
+</resources>

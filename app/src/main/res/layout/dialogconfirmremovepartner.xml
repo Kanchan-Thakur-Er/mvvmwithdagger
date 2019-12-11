@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorDialogGrey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/crossback"
+            android:gravity="center"
+            android:text="X"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_15ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_7sdp"
+            android:fontFamily="@font/exo_2_light"
+            android:gravity="center"
+            android:text="Are you sure you want to remove your partner link. If you proceed all open messages and matches with that partner will be deleted."
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_13ssp" />
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_7sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="@drawable/btndialogbackground"
+            android:text="CONTINUE"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_13ssp" />
+
+        <TextView
+            android:id="@+id/tvChangePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:fontFamily="@font/exo_2"
+            android:text="@string/cancel"
+            android:textColor="@color/colorbtnbck"
+            android:textSize="@dimen/_10ssp" />
+    </LinearLayout>
+</LinearLayout>

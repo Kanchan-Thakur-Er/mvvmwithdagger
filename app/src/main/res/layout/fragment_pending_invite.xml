@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/imgSymbolProfilePic"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:src="@drawable/symbol_profile_pic" />
+
+            <ImageView
+                android:id="@+id/imgRatingSymbol"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:src="@drawable/img_rating_symbol" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="@dimen/_160sdp"
+            android:layout_gravity="center"
+            android:background="@drawable/grey_circle">
+
+            <ImageView
+                android:id="@+id/image_profilepic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/profilepic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:drawableBottom="@drawable/img_logdata_black_symbol"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textColor="@color/colorLightBrown" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/lobster_two"
+            android:text="Invite Pending"
+            android:textColor="@color/colorLightBrown"
+            android:textSize="@dimen/_25ssp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo_2"
+            android:gravity="center"
+            android:text="Email@email.com"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_12ssp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:backgroundTint="@color/colorBlack"
+            android:fontFamily="@font/exo_2"
+            android:hint="CREATE A COUPLE NAME"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:nextFocusDown="@id/edt_YourCity"
+            android:textColorHint="@color/colorText"
+            android:textSize="@dimen/_13ssp" />
+
+        <EditText
+            android:id="@+id/edtAnniversaryDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:backgroundTint="@color/colorBlack"
+            android:fontFamily="@font/exo_2"
+            android:hint="ANNIVERSARY DATE"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColorHint="@color/colorText"
+            android:textSize="@dimen/_13ssp" />
+
+        <EditText
+            android:id="@+id/edtTogetherSince"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:backgroundTint="@color/colorBlack"
+            android:fontFamily="@font/exo_2"
+            android:hint="TOGETHER SINCE"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColorHint="@color/colorText"
+            android:textSize="@dimen/_13ssp" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner_interest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:background="@drawable/back_design"
+            android:entries="@array/select_relationship_ship" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/lobster_two"
+            android:text="Favourite Date"
+            android:textColor="@color/colorLightBrown"
+            android:textSize="@dimen/_25ssp" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@color/colorGreyblack" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo_2"
+            android:gravity="center"
+            android:text="NO FAVORITE DATE SELECTED"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_15ssp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@color/colorGreyblack" />
+
+        <Button
+            android:id="@+id/btnSaveChanges"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/exo_2"
+            android:text="save changes"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_13ssp" />
+
+        <TextView
+            android:id="@+id/tvRemoveLinkRequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo_2"
+            android:gravity="center"
+            android:text="@string/remove_link_request"
+            android:textColor="@color/colorbtnbck2"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="@font/exo_2"
+            android:gravity="center"
+            android:text="@string/re_send_email_invite"
+            android:textColor="@color/colorbtnbck2"
+            android:textSize="@dimen/_12ssp" />
+    </LinearLayout>
+</ScrollView>
